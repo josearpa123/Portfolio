@@ -3,17 +3,17 @@
 @tailwind utilities;
 
 html {
-  /* height: 100%; */
+  /* height: 100%; */ 
 }
 html,
 body {
   /* height: 100%; */
-  color: #fff;
-  background: #1f1934;
+  color: #fff;  
+  background: #051c4dd7;
 }
 
 main {
-  background: #393a47;
+  background: #000000ec;
   height: 100vh;
   height: 100dvh;
 }
@@ -21,7 +21,7 @@ main {
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
-  background-color: #f5741c;
+  background-color: #ffffff;
 }
 
 @layer utilities {

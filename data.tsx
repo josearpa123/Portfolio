@@ -1,30 +1,20 @@
-import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Rss, Twitch, Youtube, Crop, Pencil, Computer, Book, Rocket, Speech } from "lucide-react";
+import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Rss, Twitch, Youtube, Crop, Pencil, Computer, Book, Rocket, Speech, Instagram, Github } from "lucide-react";
 
-export const socialNetworks = [
-    {
-        id: 1,
-        logo: <Youtube size={30} strokeWidth={1} />,
-        src: "#!",
-    },
+export const socialNetworks = [ 
     {
         id: 2,
         logo: <Linkedin size={30} strokeWidth={1} />,
-        src: "#!",
-    },
-    {
-        id: 3,
-        logo: <Twitter size={30} strokeWidth={1} />,
-        src: "#!",
+        src: "https://www.linkedin.com/in/jose-david-arias-pantoja-791b011a2/",
     },
     {
         id: 4,
-        logo: <Rss size={30} strokeWidth={1} />,
-        src: "#!",
+        logo: <Github size={30} strokeWidth={1} />,
+        src: "https://github.com/josearpa123",
     },
     {
         id: 5,
-        logo: <Twitch size={30} strokeWidth={1} />,
-        src: "#!",
+        logo: <Instagram size={30} strokeWidth={1} />,
+        src: "https://www.instagram.com/joseariasdavid/",
     },
 ];
 
@@ -65,31 +55,37 @@ export const itemsNavbar = [
 export const dataAboutPage = [
     {
         id: 1,
-        title: "Frontend Developer",
+        title: "Tecnico en sistemas",
         subtitle: "TechSolutions",
-        description: "Colabora con un equipo dinámico para desarrollar interfaces de usuario atractivas y funcionales que impulsen el éxito de nuestros clientes en el mundo digital.",
-        date: "Nov 2023 ",
+        description: "Colabora con un equipo dinámico para desarrollar interfaces de usuario atractivas y funcionales que impulsen el éxito de nuestros clientes en el mundo digital",
+        date: "Dic 2021 ",
     },
     {
-        id: 2,
-        title: "Creador de Experiencias Digitales",
-        subtitle: "PixelCrafters",
-        description: "Trabaja en proyectos emocionantes que desafían los límites de la creatividad y la tecnología. Únete a nosotros mientras creamos experiencias digitales cautivadoras que inspiran y cautivan a nuestros usuarios.",
-        date: "May 2021",
+        d: 2,
+        title: "Ingienieria en sistemas",
+        subtitle: "Estudiante de 6th semestre",
+        description: "Estudiante de Ingeniería en Sistemas con experiencia en Java, desarrollo Android, y administración de bases de datos (PostgreSQL, Oracle, MySQL). Conocimientos en Docker y redes Cisco (CCNA). Capaz de crear soluciones backend y estructuras escalables. Motivado por aprender y contribuir a proyectos innovadores.",
+        date: "En curso",
+        additionalTitle: "Certificaciones"
     },
     {
-        id: 3,
-        title: "Especialista en Desarrollo Frontend",
-        subtitle: "CodeForge Solutions",
-        description: "Como desarrollador frontend, tendrás la oportunidad de colaborar en proyectos diversos y desafiantes que te permitirán expandir tus habilidades y dejar tu huella en el mundo digital.",
-        date: "Ago 2019",
+        d: 3,
+        title: "Curso de Spring Framework y Spring Boot",
+        subtitle: "Codigo Facilito",
+        date: "Completada",
     },
     {
-        id: 4,
-        title: "Prácticas Grado",
-        subtitle: "WebWizards Inc.",
-        description: "Únete a nosotros mientras creamos sitios web y aplicaciones interactivas que sorprenden y deleitan a nuestros clientes. Si tienes pasión por el diseño y la programación, y disfrutas colaborar en un entorno creativo, ¡queremos conocerte!        ",
-        date: "Mar 2018",
+        d: 4,
+        title: "Fundamentos de HTML -Bootcamp Fronted",
+        subtitle: "Codigo Facilito",
+        Description: "Generezión 3",
+        date: "Completada",
+    },
+    {
+        d: 5,
+        title: "Curso de Patrones de Diseño con Java",
+        subtitle: "Codigo Facilito",
+        date: "Completada",
     },
 ]
 
@@ -221,7 +217,7 @@ export const dataTestimonials = [
     },
     {
         id: 2,
-        name: "Juan Pérez",
+        name: "Jose David Arias",
         description:
             "Me encanta la variedad de testimonios disponibles en esta página. Es inspirador ver cómo otras personas han superado desafíos similares a los míos. ¡Gracias por esta invaluable fuente de motivación!",
         imageUrl: "/profile2.png",
