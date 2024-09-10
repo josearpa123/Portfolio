@@ -1,4 +1,6 @@
 import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Rss, Twitch, Youtube, Crop, Pencil, Computer, Book, Rocket, Speech, Instagram, Github } from "lucide-react";
+import { DiDocker } from "react-icons/di";
+import { SiPostgresql } from "react-icons/si";
 
 export const socialNetworks = [ 
     {
@@ -123,88 +125,60 @@ export const dataCounter = [
 export const serviceData = [
     {
         icon: <Crop />,
-        title: "Branding",
-        description: "Desarrollo de una identidad de marca sólida y coherente, incluyendo diseño de logotipo, colores y elementos visuales",
+        title: "Gestión de Proyectos",
+        description: "Planificación, seguimiento y control de proyectos utilizando metodologías ágiles.",
     },
     {
         icon: <Pencil />,
-        title: "Diseño web",
-        description: "Diseño creativo y profesional de interfaces web intuitivas y atractivas, centradas en la experiencia del usuario",
+        title: "Diseño UML",
+        description: "Modelado de sistemas mediante diagramas UML, incluyendo diagramas de clases, casos de uso y secuencia para una mejor comprensión del software.",
     },
     {
         icon: <Computer />,
-        title: "Desarrollo web",
-        description: "Diseño y desarrollo de sitios web a medida, adaptados a tus necesidades",
+        title: "Desarrollo de Software",
+        description: "Desarrollo de aplicaciones web y móviles con lenguajes como Java, Python y frameworks modernos. Experiencia en Android Studio.",
     },
     {
-        icon: <Book />,
-        title: "Copywriting",
-        description: "Creación de contenido persuasivo y atractivo que capta la atención de tu audiencia",
+        icon: <SiPostgresql />,
+        title: "Administración de Bases de Datos",
+        description: "Manejo de bases de datos como PostgreSQL, Oracle y MySQL, asegurando la integridad y el rendimiento óptimo de los datos.",
     },
     {
         icon: <Rocket />,
-        title: "SEO",
-        description: "Optimización de tu presencia en línea mediante estrategias de SEO avanzadas, ",
+        title: "Enterprise Architect",
+        description: "Uso de Enterprise Architect para modelado de arquitecturas empresariales y diseño de soluciones escalables.",
+    },
+    {
+        icon: <DiDocker  />,
+        title: "Docker y Contenedores",
+        description: "Implementación de soluciones con Docker, creando contenedores que facilitan la portabilidad y escalabilidad del software.",
     },
 ];
+
 
 export const dataPortfolio = [
     {
         id: 1,
-        title: "Web Pro",
-        image: "/image-1.jpg",
+        title: "Inversiones inmobiliarias alianza",
+        image: "/image.png",
         urlGithub: "#!",
-        urlDemo: "#!",
+        urlDemo: "https://inversionesinmobiliariasalianza.com.co/",
     },
     {
         id: 2,
-        title: "Desarrollo Web Ágil",
-        image: "/image-2.jpg",
-        urlGithub: "#!",
+        title: "Sistemas de produccion de café",
+        image: "/imagecopy.png",
+        urlGithub: "https://github.com/josearpa123/Sistema-produccion-cafe",
         urlDemo: "#!",
     },
     {
         id: 3,
-        title: "Estrategias Web",
-        image: "/image-3.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
+        title: "Portafolio",
+        image: "/imageportafolio.png",
+        urlGithub: "https://github.com/josearpa123/Portfolio",
+        urlDemo: "https://portfolio-92rhmiq99-jose-david-arias-pantojas-projects.vercel.app/testimonials",
     },
-    {
-        id: 4,
-        title: "Ideas Creativas",
-        image: "/image-4.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
-    },
-    {
-        id: 5,
-        title: "Webs Impactantes",
-        image: "/image-5.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
-    },
-    {
-        id: 6,
-        title: "Web Dinámica",
-        image: "/image-6.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
-    },
-    {
-        id: 7,
-        title: "Dark Web ",
-        image: "/image-7.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
-    },
-    {
-        id: 8,
-        title: "E-commerce web",
-        image: "/image-8.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
-    }
+   
 ];
 
 export const dataTestimonials = [

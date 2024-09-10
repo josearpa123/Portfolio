@@ -45,7 +45,7 @@ const Introduction = () => {
                     infraestructuras escalables y
                     eficientes. Motivado por aprender
                     nuevas tecnologías y contribuir al
-                    desarrollo de
+                    desarrollo de proyectos nuevos.
                     </p>
 
                     <div className="flex items-center justify-center gap-3 md:justify-start md:gap-10">
