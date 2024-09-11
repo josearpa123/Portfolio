@@ -48,36 +48,35 @@ const ContactForm = () => {
                     Contáctanos
                     <span className="block font-bold text-secondary"> Envíanos un mensaje</span>
                 </h1>
-
-                <form 
-                    onSubmit={handleSubmit} 
+                <form
+                    onSubmit={handleSubmit}
                     className="flex flex-col items-center w-full max-w-md mx-auto space-y-4"
                 >
-                    <input 
+                    <input
                         type="text"
                         placeholder="Tu nombre"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
-                        className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary"
+                        className="w-full p-3 border border-gray-300 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-secondary"
                         required
                     />
-                    <input 
+                    <input
                         type="email"
                         placeholder="Tu correo electrónico"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
-                        className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary"
+                        className="w-full p-3 border border-gray-300 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-secondary"
                         required
                     />
-                    <textarea 
+                    <textarea
                         placeholder="Tu mensaje"
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
-                        className="w-full p-3 border border-gray-300 rounded-md h-32 focus:outline-none focus:ring-2 focus:ring-secondary"
+                        className="w-full p-3 border border-gray-300 rounded-md bg-white text-black h-32 focus:outline-none focus:ring-2 focus:ring-secondary"
                         required
                     />
 
-                    <button 
+                    <button
                         type="submit"
                         className="px-6 py-3 text-white bg-secondary rounded-md hover:bg-secondary-dark transition"
                     >
