@@ -14,7 +14,7 @@ const ServicesPage = () => {
             <TransitionPage />
             <CircleImage />
             <AvatarServices />
-            <div className="grid items-center justify-center min-h-screen max-w-5xl gap-6 mx-auto px-4 md:px-8 lg:px-12 mt-24 pb-32">
+            <div className="grid items-center justify-center min-h-screen max-w-5xl gap-6 mx-auto px-4 md:px-8 lg:px-12 pt-20 pb-32">
                 <div className="max-w-md mx-auto md:max-w-[450px]">
                     <h1 className="text-xl leading-tight text-center md:text-left md:text-4xl md:mb-5">Mis <span className="font-bold text-secondary">Skills</span></h1>
                     <p className="text-base md:text-xl text-gray-300 mb-3 text-center md:text-left">Tengo experiencia en el uso de las siguientes tecnologías:</p>
