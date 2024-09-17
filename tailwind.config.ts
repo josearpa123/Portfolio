@@ -8,14 +8,23 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      extend: {
+        screens: {
+          'sm': '640px',
+          'md': '768px',
+        },
+      },
+      
       colors: {
         secondary: "#1E90FF",
         darkBg: "#131424",
       },
       backgroundImage: {
         "gradient-cover":
-          "linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%)",
+          "linear-gradient(180deg, rgba(170, 54, 124, 0.7) 0%, rgba(74, 47, 189, 0.7) 100%)",
       },
+      
+      
     },
   },
   plugins: [],
