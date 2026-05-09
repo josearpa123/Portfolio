@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Urbanist } from "next/font/google";
+import { Archivo, Space_Grotesk } from "next/font/google";
 
 import "./globals.css";
 import 'swiper/css';
@@ -9,11 +9,19 @@ import 'swiper/css/scrollbar';
 import Navbar from "@/components/navbar";
 import Header from "@/components/header";
 
-const urbanist = Urbanist({ subsets: ["latin"] });
+const archivo = Archivo({ 
+  subsets: ["latin"],
+  variable: '--font-archivo',
+});
+
+const spaceGrotesk = Space_Grotesk({ 
+  subsets: ["latin"],
+  variable: '--font-space-grotesk',
+});
 
 export const metadata: Metadata = {
-  title: "Jose Arias Landing Page",
-  description: "Landing page made by Jose Arias",
+  title: "Jose Arias | Systems Engineer Portfolio",
+  description: "Junior Systems Engineer specializing in Java, Docker, and Web Development. Explore my projects and skills.",
 };
 
 export default function RootLayout({
@@ -23,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={urbanist.className}>
+      <body className={`${archivo.variable} ${spaceGrotesk.variable} font-body bg-darkBg text-white antialiased`}>
         <Navbar />
         <Header />
         {children}

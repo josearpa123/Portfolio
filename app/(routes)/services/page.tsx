@@ -1,52 +1,54 @@
 "use client"
 
-import AvatarServices from "@/components/avatar-services";
-import CircleImage from "@/components/circle-image";
-import SliderServices from "@/components/slider-services";
 import TransitionPage from "@/components/transition-page";
-
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaDocker, FaJava, FaPython, FaWordpress, FaGithub, FaGit } from "react-icons/fa";
-import { SiPostgresql, SiOracle, SiMysql, SiAndroidstudio, SiLinux } from "react-icons/si";
+import ContainerPage from "@/components/container-page";
+import { serviceData } from "@/data";
+import { CheckCircle2 } from "lucide-react";
 
 const ServicesPage = () => {
     return (
-        <>
+        <main className="relative min-h-screen bg-[#000212] pt-32 pb-40">
             <TransitionPage />
-            <CircleImage />
-            <AvatarServices />
-            <div className="grid items-center justify-center min-h-screen max-w-5xl gap-6 mx-auto px-4 md:px-8 lg:px-12 mt-40 pb-40">
-                <div className="max-w-md mx-auto md:max-w-[450px]">
-                    <h1 className="text-xl leading-tight text-center md:text-left md:text-4xl mb-12"> {/* Ajuste del margen inferior del título */}
-                        Mis <span className="font-bold text-secondary">Skills</span>
-                    </h1>
-                    <p className="text-base md:text-xl text-gray-300 mb-8 text-center md:text-left"> {/* Ajuste del margen inferior del párrafo */}
-                        Tengo experiencia en el uso de las siguientes tecnologías:
-                    </p>
+            <div className="glow-bg opacity-30" />
+            
+            <ContainerPage>
+                <div className="max-w-6xl mx-auto">
+                    <header className="mb-20 text-center md:text-left">
+                        <h1 className="text-4xl md:text-7xl font-heading font-bold mb-6 tracking-tight">
+                            Habilidades <span className="text-secondary">&</span> Stack
+                        </h1>
+                        <p className="text-xl text-slate-400 font-body max-w-2xl leading-relaxed">
+                            Soluciones de ingeniería enfocadas en la robustez técnica, 
+                            la automatización y el rendimiento del sistema.
+                        </p>
+                    </header>
 
-                    <div className="flex flex-wrap justify-center gap-4 text-4xl md:text-5xl text-secondary mb-16">
-                        <FaHtml5 title="HTML5" className="text-[#e34c26]" />
-                        <FaCss3Alt title="CSS3" className="text-[#264de4]" />
-                        <FaJs title="JavaScript" className="text-[#f0db4f]" />
-                        <FaReact title="React" className="text-[#61dafb]" />
-                        <FaJava title="Java" className="text-[#5382a1]" />
-                        <FaPython title="Python" className="text-[#306998]" />
-                        <FaWordpress title="WordPress" className="text-[#21759b]" />
-                        <SiAndroidstudio title="Android Studio" className="text-[#3DDC84]" />
-                        <SiPostgresql title="PostgreSQL" className="text-[#336791]" />
-                        <SiOracle title="Oracle" className="text-[#f80000]" />
-                        <SiMysql title="MySQL" className="text-[#00758f]" />
-                        <FaDocker title="Docker" className="text-[#2496ed]" />
-                        <FaGit title="Git" className="text-[#f34f29]" />
-                        <FaGithub title="GitHub" className="text-white" />
-                        <SiLinux title="Linux" className="text-white" />
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {serviceData.map((item, index) => (
+                            <div key={index} className="group linear-card p-8 hover:border-secondary/40 transition-all duration-500">
+                                <div className="mb-6 inline-flex p-3 rounded-xl bg-white/5 text-secondary group-hover:scale-110 group-hover:bg-secondary/10 transition-all">
+                                    {item.icon}
+                                </div>
+                                <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
+                                <p className="text-slate-400 font-body leading-relaxed mb-6">
+                                    {item.description}
+                                </p>
+                                <div className="pt-6 border-t border-white/5">
+                                    <ul className="space-y-3">
+                                        {["Alto Rendimiento", "Arquitectura Limpia"].map((feature, i) => (
+                                            <li key={i} className="flex items-center gap-3 text-xs font-bold tracking-widest uppercase text-slate-500">
+                                                <CheckCircle2 size={14} className="text-secondary" />
+                                                {feature}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
-
-                <div className="w-full mt-20 md:mt-12"> {/* Ajuste del margen superior de SliderServices */}
-                    <SliderServices />
-                </div>
-            </div>
-        </>
+            </ContainerPage>
+        </main>
     );
 }
 

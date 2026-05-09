@@ -2,34 +2,30 @@
 
 import { socialNetworks } from "@/data";
 import Link from "next/link";
-import { MotionTransition } from "./transition-component";
 
 const Header = () => {
     return (
-        <MotionTransition position="bottom" className="absolute z-40 inline-block w-full top-5 md:top-10">
-            <header>
-                <div className="container justify-between max-w-6xl mx-auto md:flex">
-                    <Link href='/'>
-                        <h1 className="my-3 text-4xl font-bold text-left md:text-left">
-                            Jose
-                            <span className="text-secondary">_Arias</span>
-                        </h1>
-                    </Link>
-                    <div className="flex items-center justify-center gap-7">
-                        {socialNetworks.map(({ logo, src, id }) => (
-                            <Link
-                                key={id}
-                                href={src}
-                                target="_blank"
-                                className="transition-all duration-300 hover:text-secondary"
-                            >
-                                {logo}
-                            </Link>
-                        ))}
-                    </div>
+        <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-black/20 backdrop-blur-xl">
+            <div className="container max-w-7xl mx-auto flex items-center justify-between h-16 px-6">
+                <Link href='/'>
+                    <h1 className="text-xl font-heading font-bold tracking-tighter hover:opacity-80 transition-opacity">
+                        Jose<span className="text-secondary">.</span>Arias
+                    </h1>
+                </Link>
+                <div className="flex items-center gap-6">
+                    {socialNetworks.map(({ logo, src, id }) => (
+                        <Link
+                            key={id}
+                            href={src}
+                            target="_blank"
+                            className="text-slate-400 hover:text-white transition-colors"
+                        >
+                            {logo}
+                        </Link>
+                    ))}
                 </div>
-            </header>
-        </MotionTransition>
+            </div>
+        </header>
     );
 }
 
