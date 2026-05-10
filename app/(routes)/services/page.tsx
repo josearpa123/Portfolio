@@ -23,25 +23,25 @@ const ServicesPage = () => {
                         </p>
                     </header>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {serviceData.map((item, index) => (
-                            <div key={index} className="group linear-card p-8 hover:border-secondary/40 transition-all duration-500">
-                                <div className="mb-6 inline-flex p-3 rounded-xl bg-white/5 text-secondary group-hover:scale-110 group-hover:bg-secondary/10 transition-all">
+                            <div key={index} className="group linear-card p-10 hover:border-secondary/40 transition-all duration-500 bg-white/[0.02] backdrop-blur-xl">
+                                <div className="mb-8 inline-flex p-4 rounded-2xl bg-white/5 text-secondary group-hover:scale-110 group-hover:bg-secondary group-hover:text-white transition-all duration-500 shadow-[0_0_30px_-5px_rgba(34,197,94,0.3)]">
                                     {item.icon}
                                 </div>
-                                <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
-                                <p className="text-slate-400 font-body leading-relaxed mb-6">
+                                <h3 className="text-3xl font-heading font-black mb-4 uppercase tracking-tighter">{item.title}</h3>
+                                <p className="text-slate-400 font-body leading-relaxed mb-8 text-lg">
                                     {item.description}
                                 </p>
-                                <div className="pt-6 border-t border-white/5">
-                                    <ul className="space-y-3">
-                                        {["Alto Rendimiento", "Arquitectura Limpia"].map((feature, i) => (
-                                            <li key={i} className="flex items-center gap-3 text-xs font-bold tracking-widest uppercase text-slate-500">
-                                                <CheckCircle2 size={14} className="text-secondary" />
-                                                {feature}
-                                            </li>
+                                <div className="pt-8 border-t border-white/5">
+                                    <p className="text-[10px] font-bold tracking-[0.3em] uppercase text-secondary/60 mb-6">Core Technologies</p>
+                                    <div className="flex flex-wrap gap-3">
+                                        {item.techs?.map((tech, i) => (
+                                            <span key={i} className="px-3 py-1.5 bg-white/5 rounded-lg text-[11px] font-bold text-slate-300 border border-white/5 hover:border-secondary/30 hover:bg-secondary/10 transition-all cursor-default">
+                                                {tech}
+                                            </span>
                                         ))}
-                                    </ul>
+                                    </div>
                                 </div>
                             </div>
                         ))}
