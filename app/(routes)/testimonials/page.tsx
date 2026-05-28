@@ -15,7 +15,7 @@ const ContactPage = () => {
                     <header className="mb-20 text-center">
                         <div className="overflow-hidden mb-6">
                             <span className="inline-block text-[10px] font-bold tracking-[0.4em] uppercase text-secondary animate-slide-up">
-                                Let's Connect
+                                Let&apos;s Connect
                             </span>
                         </div>
                         <h1 className="text-6xl md:text-9xl font-heading font-black tracking-tighter leading-none animate-title mb-8">

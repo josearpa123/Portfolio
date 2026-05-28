@@ -97,7 +97,7 @@ export const dataPortfolio = [
     {
         id: 1,
         title: "Jabones Rocío",
-        image: "https://images.unsplash.com/photo-1620332372374-f108c53d2e03?q=80&w=2000", // 3D bubble/soap character style
+        image: "https://images.unsplash.com/photo-1620332372374-f108c53d2e03?q=80&w=2000", // 3D cartoon character with soap/bubbles feel
         urlGithub: "https://github.com/josearpa123/Jabones-Rocio",
         urlDemo: "https://jabonesrocio.com.co",
         tags: ["React", "Laravel", "PROD"],
@@ -108,7 +108,7 @@ export const dataPortfolio = [
     {
         id: 2,
         title: "InTAS ML Pipeline",
-        image: "https://images.unsplash.com/photo-1675557009875-436f595b161a?q=80&w=2000", // 3D Robot/Brain character
+        image: "https://images.unsplash.com/photo-1535378917042-10a22c95931a?q=80&w=2000", // 3D Robot/AI character
         urlGithub: "https://github.com/josearpa123/INTAS_GRADIENT_BOOSTING",
         urlDemo: "#!",
         tags: ["Python", "ML", "Research"],
@@ -119,7 +119,7 @@ export const dataPortfolio = [
     {
         id: 3,
         title: "ETL & DB Replication",
-        image: "https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?q=80&w=2000", // 3D Abstract tech character
+        image: "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=2000", // 3D Tech/Server abstract illustration
         urlGithub: "https://github.com/josearpa123/PROYECTO-DOCKERIZADO-CON-ETL-ORACLE-Y-POSTGRESQL",
         urlDemo: "#!",
         tags: ["PostgreSQL", "Oracle", "Docker"],
@@ -130,7 +130,7 @@ export const dataPortfolio = [
     {
         id: 4,
         title: "PayHub (Próximamente 🔒)",
-        image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2000", // 3D Money/Wallet character
+        image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=2000", // 3D Wallet/Payment character
         urlGithub: "#!",
         urlDemo: "#!",
         tags: ["Fintech", "Geo", "Scale"],
@@ -141,7 +141,7 @@ export const dataPortfolio = [
     {
         id: 5,
         title: "S.O.S. Natural",
-        image: "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=2000", // 3D Leaf/Nature character
+        image: "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=2000", // 3D Plant/Earth mascot
         urlGithub: "https://github.com/josearpa123/Sos_natural",
         urlDemo: "#!",
         tags: ["Next.js", "E-commerce", "Dev"],
@@ -152,7 +152,7 @@ export const dataPortfolio = [
     {
         id: 6,
         title: "Sistema Producción Café",
-        image: "https://images.unsplash.com/photo-1559181567-c3190ca9959b?q=80&w=2000", // 3D Coffee cup/bean character
+        image: "https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=2000", // 3D Coffee/Cup character style
         urlGithub: "https://github.com/josearpa123/SISTEMA-PRODUCCION-CAFE",
         urlDemo: "#!",
         tags: ["UML", "Architecture", "Design"],

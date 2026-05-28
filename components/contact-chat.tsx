@@ -93,7 +93,7 @@ const ContactChat = () => {
                         <div className="absolute bottom-0 right-0 w-3 h-3 bg-secondary rounded-full border-2 border-[#000212]" />
                     </div>
                     <div>
-                        <h3 className="text-sm font-bold">Jose's AI Assistant</h3>
+                        <h3 className="text-sm font-bold">Jose&apos;s AI Assistant</h3>
                         <span className="text-[10px] text-secondary font-bold uppercase tracking-widest">En línea</span>
                     </div>
                 </div>

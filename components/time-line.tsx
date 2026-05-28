@@ -22,9 +22,6 @@ const TimeLine = () => {
                                 <div className="text-xl font-bold text-gray-400">{data.subtitle}</div>
                             </div>
                             <div className="text-slate-400">{data.description}</div>
-                            {data.additionalTitle && (
-                                 <h1 className="mt-1 text-2xl font-semibold text-white-600">{data.additionalTitle}</h1>
-                            )}
                         </div>
                     ))}
                 </div>
